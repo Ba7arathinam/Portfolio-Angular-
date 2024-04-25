@@ -1,0 +1,23 @@
+
+<style>
+    .project-det{
+      display: grid;
+      grid-auto-flow: column;
+      
+    }
+    </style>
+    
+    
+    <div class="container">
+    <div class="row project-det">
+      <div class="col col-md-6  mt-4" style="max-width: 100%;min-width: 100%;">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+      <div class="col-lg-4 col-md-6  mt-4 " style="max-width: 100%;min-width: 100%;">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+      <div class="col-lg-4 col-md-6  mt-4" style="max-width: 100%;min-width: 100%;">
+<app-project-card [project]="project"></app-project-card>
+      </div>
+    </div>
+    </div>

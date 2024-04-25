@@ -1,0 +1,87 @@
+<!-- home.component.html -->
+<style>
+.skills-details{
+  
+    margin: .3%;
+    padding: 1%;
+    border-radius: 1.5rem;
+}
+
+.my-name{
+    display: block;
+  }
+</style>
+
+
+<div class="container mt-5">
+    <header class="name-cont">
+        <div class = "container ">
+            <h1>Hi, my name is</h1>
+            <h1 class="my-name">Balarathinam T.</h1>
+            <h5 aria-label="Hi! I'm a developer">
+                <span class="typewriter"> </span><span> Developer</span>
+               </h5>
+          </div>
+    </header>
+<!-- ABout me  -->
+<section class="section_all bg-light abt-all" id="about">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title_all text-center">
+                    <h3 class="font-weight-bold"> About<span class="text-custom"> Me</span></h3>
+                   
+                    <div class="">
+                        <i class="bi bi-file-person"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row vertical_content_manage mt-5">
+            <div class="col-lg-6 about_icon">
+                <div class="about_header_main mt-3">
+                    <div class="about_icon_box">
+                        <p class="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
+                    </div>
+                    <h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy text of the printing industry.</h4>
+                    <p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                    <p class="text-muted mt-3"> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+
+                    <div>
+                        <button class="btn-1" routerLink="/Contact">Contact Me</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img_about mt-3">
+                    <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block img-abt1">
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+</section>
+
+<!-- end of About  -->
+
+    
+
+    <section id="skills" class="mt-4">
+        <h2 id="skill-tit">Skills</h2>
+        <div class="row skill-all">
+          <div class="col-md-2 skills-details card" *ngFor="let skill of skills" [@fadeInOut]>
+            <div class="text-center">
+              <img src="{{ skill.logoUrl }}" alt="{{ skill.name }} Logo" class="img-skill" height="50" width="50">
+              <p>{{ skill.name }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <!-- Add more sections as needed -->
+  </div>
+  

@@ -1,0 +1,321 @@
+/* NOTE: I only tested this on Google Chrome.*/
+
+body{
+    background: #c5dffb;
+    font-family: "Work Sans", sans-serif;
+
+  }
+  
+
+
+  /* //.typewriter */
+
+
+  .name-cont{
+    width: 100%;
+    height: 100dvh;
+   padding-top: 17%;
+  }
+
+ 
+  
+  .container h1:nth-child(1) {
+    color: #355c7d;
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 0 35%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 170px; */
+    animation: type 2s steps(40,end) forwards;
+  }
+  
+  .container h1:nth-child(2) {
+    opacity: 0;
+    font-family: "Work Sans", sans-serif;
+    margin: 0 auto auto auto;
+    background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+    font-weight: 800;
+    font-size: 3rem;  
+    width: 33%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+  }
+
+  
+  @keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+    100% {
+      background-position: 400px 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 100%;
+    }
+    1%, 99%{
+      border-right: 1px solid orange;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  h5{
+    font-size: 4vmin;
+    color: #355c7d;
+    font-family: 'Fira Code', monospace;
+    text-align: left;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+  }
+  
+  /* Typewriter effect 1 */
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "W"; }
+    2.2791%, 25.0698% { content: "We"; }
+    3.4186%, 23.9302% { content: "Web"; }
+
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "F"; }
+    33.0465%, 49.0000% { content: "Fu"; }
+    34.1860%, 47.8605% { content: "Ful"; }
+    35.3256%, 46.7209% { content: "Full"; }
+    36.4651%, 45.5814% { content: "Full "; }
+    37.6047%, 44.4419% { content: "Full S"; }
+    38.6047%, 43.4419% { content: "Full St"; }
+    39.6047%, 42.4419% { content: "Full Sta"; }
+    40.6047%, 41.4419% { content: "Full Stac"; }
+    41.6047%, 40.4419% { content: "Full Stack"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "R"; }
+    56.9767%, 72.9302% { content: "Re"; }
+    58.1163%, 71.7907% { content: "Rea"; }
+    59.2558%, 70.6512% { content: "Reac"; }
+    60.3953%, 69.5116% { content: "React"; }
+ 
+  
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "A"; }
+    80.9070%, 94.5814% { content: "An"; }
+    82.0465%, 93.4419% { content: "Ang"; }
+    83.1860%, 92.3023% { content: "Angu"; }
+    84.3256%, 91.1628% { content: "Angula"; }
+    85.3256%, 90.1628% { content: "Angular"; }
+  }
+  
+  
+  
+  @keyframes blink1 {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink1 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "Web"; }
+      25% { content: "Full Stack"; }
+      50% { content: "React"; }
+      75% { content: "Angular"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+  
+
+
+  /* about page  */
+  
+#about{
+    font-family: Hack, monospace;
+
+}
+
+#abt-all{
+    padding: 2%;
+    height: 100vh;
+}
+
+.text-custom{
+    color: #de397e;
+}
+
+h3.font-weight-bold{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 2%;
+    
+}
+.img_about{
+    margin: 0 3% 0 3%;
+}
+
+.img-abt1{
+    border-radius: 0.5rem;
+
+}
+.text-muted,.text_custom{
+    margin:  0 0 1rem 0;
+}
+
+
+
+  .btn-1 {
+    font-family: Hack, monospace;
+    background: #de397e;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 1.5rem;
+    margin-bottom: 3%;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+
+    &::after {
+        content: "\f054";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        position: absolute;
+        left: 85%;
+        top: 31%;
+        right: 5%;
+        bottom: 0;
+        opacity: 0;
+
+    }
+
+    &:hover {
+        background: #dc0c63;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px  #ba4173;
+        padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+        &::after {
+            opacity: 1;
+            transition: all 0.5s;
+
+        }
+    }
+
+
+}
+                    /* skill section  */
+.img-skill{
+    object-fit:cover;
+     width: 5rem;
+     height: auto;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+}
+
+.skill-all{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.skill-all:hover img {
+    opacity:0.3;
+  }
+
+  .skill-all img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+  
+
+
+.skills-details{
+    flex: 1rem 1rem 30rem;
+    background: var(--second-bg-color);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.img-skill{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+#skill-tit{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bolder;
+    margin: 5% 0 5% 0;
+    font-family: Hack, monospace;
+
+
+}
